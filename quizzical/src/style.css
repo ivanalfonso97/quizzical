@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #F5F7FB;
+    --bg-dark: #1C1C1C;
+    --bg-chosen: #D6DBF5;
+    --bg-correct: #94D7A2;
+    --bg-wrong: #F8BCBC;
+    --clr-primary: #293264;
+    --clr-secondary: #F5F7FB;
+    --btn-primary: #4D5B9E;
+    --bdr-color: #4D5B9E;
+    --bdr-dark: #1C1C1C;
+    --hr-color: #DBDEF0;
+    --ff-primary: 'Karla', sans-serif;
+    --ff-secondary: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--bg-dark);
+    font-family: var(--ff-secondary);
+    color: var(--clr-primary);
+    font-style: normal;
+    height: 100vh;
+}
+
+.app {
+    max-width: 550px;
+    min-height: 550px;
+    background: var(--bg-primary);
+    border-radius: 20px;
+}
+
+/* Landing */
+
+.landing {
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.subtitle {
+    margin-top: 0.5em;
+}
+
+.start-btn {
+    font-weight: 500;
+    border-radius: 16px;
+    padding: 1em 3.5em;
+    margin-top: 2em;
+}
+
+/* Quiz */
+
+.quiz {
+    width: 100%;
+    padding: 2.5em 5em 1.5em 5em;
+    flex-direction: column;
+}
+
+.quiz-item {
+    width: 100%;
+    padding: 1em 0;
+    border-bottom: 0.8px solid var(--hr-color);
+}
+
+.item-question {
+    margin-bottom: 0.75em;
+}
+
+.item-choices {
+    display: flex;
+    column-gap: 0.75em;
+}
+
+.item-choice {
+    font-size: 0.625rem;
+    font-weight: 500;
+    line-height: 1.2em;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 6.4em;
+    padding: 0.4em 1em;
+    border: 0.8px solid var(--bdr-color);
+    cursor: pointer;
+}
+
+.cta-container {
+    margin-top: 1.25em;
+}
+
+.score {
+    font-weight: 700;
+    font-size: 0.75em;
+    margin-right: 1.5em;
+}
+
+.quiz-btn {
+    font-size: 0.625rem;
+    font-weight: 600;
+    padding: 1em 2em;
+    border-radius: 10px;
+}
+
+body,
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    font-family: var(--ff-secondary);
+    background: var(--btn-primary);
+    color: var(--clr-secondary);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:active {
+    border: 2px solid var(--bdr-dark);
+}
+
+.bold {
+    font-family: var(--ff-primary);
+    font-weight: 700;
+}
+
+.bb {
+    border: 1px solid blue;
+}
